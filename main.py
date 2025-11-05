@@ -10,7 +10,7 @@ OPENAI_API_KEY = "ТВОЙ_OPENAI_API_KEY"
 
 openai.api_key = OPENAI_API_KEY
 
-bot = Bot(token=TELEGRAM_TOKEN)
+TELEGRAM_TOKEN = os.getenv("BOT_TOKEN")
 dp = Dispatcher()
 
 # Память пользователей
